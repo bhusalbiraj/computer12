@@ -1,0 +1,38 @@
+*{
+    padding:2px;
+}
+
+body{
+    text-align: justify;
+    font-size: 16px;;
+}
+
+header{
+    background-color: #b5b2a8;
+    justify-content: center;
+    text-align: center;
+    font-size:18px;
+}
+
+.list{
+    padding-left: 30px;
+}
+
+p.subheading{
+    font-size: 17px;
+}
+
+div.table{
+    border: 3px solid black;   
+    margin:14px;
+}
+
+h3{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+img{
+    height:400px;
+    width:400px;
+}
