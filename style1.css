@@ -1,0 +1,24 @@
+body{
+    background:url(wall.jpg);
+}
+
+.topic{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 23px;
+    text-decoration: underline;
+    color:#0f1587;
+}
+
+.assignments{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+}
+
+a{
+    color:black;
+    font-size: 18px;
+}
+
+.undercons{
+    font-size:30px;
+}
