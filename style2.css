@@ -1,0 +1,21 @@
+body{
+    background-color: #060214;
+    color:white;
+    margin:0 50px;
+}
+
+header{
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.main{
+    font-size: 16px;
+}
+
+
+footer{
+    border-top: 1px solid #2e2d33;
+}
