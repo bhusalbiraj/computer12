@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Types of Keys in Database</title>
+	<link rel="stylesheet" href="keystyle.css">
+</head>
+<body>
+	<h1>Types of Keys in Database</h1>
+	<hr>
+	<section>
+		<h2>1. Primary Key</h2>
+		<p>A primary key is a column or set of columns in a table that uniquely identifies each row in the table.</p>
+		<p><span>Example:</span> In a table of students, the student ID column can be the primary key.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Student ID</th>
+					<th>Name</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>John</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jane</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Bob</td>
+					<td>22</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<hr>
+	<section>
+		<h2>2. Foreign Key</h2>
+		<p>A foreign key is a column or set of columns in a table that refers to the primary key of another table.</p>
+		<p><span>Example:</span> In a table of orders, the customer ID column can be a foreign key that references the customer ID column in the customers table.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Order ID</th>
+					<th>Customer ID</th>
+					<th>Order Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>2022-01-01</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>2022-01-15</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>1</td>
+					<td>2022-02-01</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<hr>
+	<section>
+		<h2>3. Composite Key</h2>
+		<p>A composite key is a primary key that consists of multiple columns.</p>
+		<p><span>Example:</span> In a table of exam results, the combination of student ID and exam ID columns can be a composite key.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Student ID</th>
+					<th>Exam ID</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>1</td>
+					<td>70</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<hr>
+	<section>
+		<h2>4. Candidate Key</h2>
+		<p>A candidate key is a column or set of columns in a table that can uniquely identify each row in the table.</p>
+		<p><span>Example:</span> In a table of employees, the employee ID column and the combination of first name and last name columns can be candidate keys.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Employee ID</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>John</td>
+					<td>Doe</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Jane</td>
+					<td>Doe</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Bob</td>
+					<td>Smith</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<hr>
+	<section>
+		<h2>5. Alternate Key</h2>
+		<p>An alternate key is a column or set of columns in a table that can uniquely identify each row in the table, but is not the primary key.</p>
+		<p><span>Example:</span> In a table of customers, the email column can be an alternate key.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Customer ID</th>
+					<th>Email</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>johndoe@example.com</td>
+					<td>John Doe</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>janedoe@example.com</td>
+					<td>Jane Doe</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>bobsmith@example.com</td>
+					<td>Bob Smith</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<hr>
+	<section>
+		<h2>6. Artificial Key</h2>
+		<p>An artificial key is a column or set of columns in a table that is created to uniquely identify each row in the table, but is not a natural part of the data.</p>
+		<p><span>Example:</span> In a table of products, a unique identifier column can be an artificial key.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Product ID</th>
+					<th>Product Name</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>UUID-1234</td>
+					<td>Product A</td>
+					<td>10.99</td>
+				</tr>
+				<tr>
+					<td>UUID-5678</td>
+					<td>Product B</td>
+					<td>9.99</td>
+				</tr>
+				<tr>
+					<td>UUID-9012</td>
+					<td>Product C</td>
+					<td>12.99</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</body>
+</html>
