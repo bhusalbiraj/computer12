@@ -1,0 +1,21 @@
+body {
+	background-color: #4c8a52; /* Light grey background */
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #ceafaf; /* White background */
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    padding:10px;
+    border-radius: 10px;
+	background-color: #367238; /* Greenish color */
+	color: #FFFFFF;
+	padding

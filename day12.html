@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQL Operations</title>
+	<link rel="stylesheet" type="text/css" href="day12.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>SQL Operations</h1>
+		</div>
+		<div class="content">
+			<h2>Logical Operations</h2>
+			<ul>
+				<li><strong>AND</strong>: SELECT * FROM CUSTOMERS WHERE AGE > 30 AND COUNTRY='USA'</li>
+				<li><strong>OR</strong>: SELECT * FROM ORDERS WHERE TOTAL_AMOUNT > 1000 OR STATUS='SHIPPED'</li>
+				<li><strong>NOT</strong>: SELECT * FROM PRODUCTS WHERE NOT CATEGORY='ELECTRONICS'</li>
+			</ul>
+			<h2>Ordering Operations</h2>
+			<ul>
+				<li><strong>ASC</strong>: SELECT * FROM EMPLOYEES ORDER BY HIRE_DATE ASC;</li>
+				<li><strong>DESC</strong>: SELECT * FROM SALES ORDER BY AMOUNT DESC;</li>
+			</ul>
+			<h2>Grouping Operations</h2>
+			<ul>
+				<li><strong>GROUP BY</strong>: SELECT CATEGORY, AVG(PRICE) FROM PRODUCTS GROUP BY CATEGORY;</li>
+			</ul>
+			<h2>Aggregate Functions</h2>
+			<ul>
+				<li><strong>AVERAGE</strong>: SELECT AVG(SALARY) FROM EMPLOYEES;</li>
+				<li><strong>MINIMUM</strong>: SELECT MIN(PRICE) FROM PRODUCTS;</li>
+				<li><strong>MAXIMUM</strong>: SELECT MAX(AMOUNT) FROM SALES;</li>
+				<li><strong>SUM</strong>: SELECT SUM(TOTAL_AMOUNT) FROM ORDERS;</li>
+				<li><strong>COUNT</strong>: SELECT COUNT(*) FROM CUSTOMERS;</li>
+				<li><strong>DISTINCT</strong>: SELECT DISTINCT(COUNTRY) FROM CUSTOMERS;</li>
+				<li><strong>ROUND</strong>: SELECT ROUND(AVG(RATING), 2) FROM REVIEWS;</li>
+			</ul>
+			<h2>String Functions</h2>
+			<ul>
+				<li><strong>LENGTH</strong>: SELECT LEN('BANANA');</li>
+				<li><strong>REVERSE</strong>: SELECT REVERSE('HELLO');</li>
+				<li><strong>REPLICATE</strong>: SELECT REPLICATE('ABC', 3);</li>
+				<li><strong>UPPERCASE</strong>: SELECT UPPERCASE('hello world');</li>
+				<li><strong>LOWERCASE</strong>: SELECT LOWERCASE('HELLO WORLD');</li>
+				<li><strong>CONCATENATION</strong>: SELECT CONCAT('Hello, ', 'World!');</li>
+				<li><strong>LEFT MOST CHARACTER</strong>: SELECT LEFT('BANANA', 3);</li>
+				<li><strong>RIGHT MOST CHARACTER</strong>: SELECT RIGHT('BANANA', 3);</li>
+			</ul>
+			<h2>Other Operations</h2>
+			<ul>
+				<li><strong>IN</strong>: SELECT * FROM CITIES WHERE COUNTRY IN ('USA', 'CANADA', 'MEXICO');</li>
+				<li><strong>BETWEEN</strong>: SELECT * FROM ORDERS WHERE TOTAL_AMOUNT BETWEEN 500 AND 1000;</li>
+				<li><strong>PERCENTAGE</strong>: SELECT * FROM PRODUCTS WHERE CATEGORY LIKE '%ELECTRONICS%';</li>
+				<li><strong>UNDERSCORE</strong>: SELECT * FROM CUSTOMERS WHERE NAME LIKE '_A%';</li>
+				<li><strong>HAVING</strong>: SELECT CATEGORY, AVG(PRICE) FROM PRODUCTS GROUP BY CATEGORY HAVING AVG(PRICE) > 100;</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

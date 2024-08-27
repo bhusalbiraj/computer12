@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foreign Key and Join Statements in DBMS</title>
+	<link rel="stylesheet" type="text/css" href="day13.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Foreign Key and Join Statements in DBMS</h1>
+		</div>
+		<div class="content">
+			<h2>Foreign Key</h2>
+			<p>A foreign key is a field in a table that refers to the primary key of another table.</p>
+			<ul>
+				<li><strong>CREATE TABLE</strong>: CREATE TABLE ORDERS (ORDER_ID INT PRIMARY KEY, CUSTOMER_ID INT, FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID));</li>
+				<li><strong>ALTER TABLE</strong>: ALTER TABLE ORDERS ADD FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID);</li>
+			</ul>
+			<h2>Join Statements</h2>
+			<p>A join statement is used to combine rows from two or more tables based on a related column between them.</p>
+			<ul>
+				<li><strong>INNER JOIN</strong>: SELECT * FROM CUSTOMERS INNER JOIN ORDERS ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID;</li>
+				<li><strong>LEFT JOIN</strong>: SELECT * FROM CUSTOMERS LEFT JOIN ORDERS ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID;</li>
+				<li><strong>RIGHT JOIN</strong>: SELECT * FROM CUSTOMERS RIGHT JOIN ORDERS ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID;</li>
+				<li><strong>FULL OUTER JOIN</strong>: SELECT * FROM CUSTOMERS FULL OUTER JOIN ORDERS ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID;</li>
+			</ul>
+			<h2>Types of Joins</h2>
+			<ul>
+				<li><strong>EQUIJOIN</strong>: A join that uses the equality operator (=) to match rows between tables.</li>
+				<li><strong>NATURAL JOIN</strong>: A join that automatically matches all columns with the same names between tables.</li>
+				<li><strong>CROSS JOIN</strong>: A join that returns the Cartesian product of rows from two tables.</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

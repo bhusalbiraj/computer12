@@ -1,0 +1,52 @@
+body {
+	background-color: #E5D8F2; /* Light purple background */
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #FFFFFF; /* White background */
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+	background-color: #87CEEB; /* Sky constellation blue background */
+	color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.content {
+	padding: 20px;
+}
+
+h2 {
+	color: #4CAF50; /* Greenish color */
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+code {
+	background-color: #F7F7F7; /* Light grey background */
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}

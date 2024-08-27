@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Database Models</title>
+	<link rel="stylesheet" type="text/css" href="database-models.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Database Models</h1>
+		</div>
+		<div class="content">
+			<h2>Types of Database Models</h2>
+			<p>A database model is a conceptual representation of the structure and organization of a database.</p>
+			<ul>
+				<li><strong>Hierarchical Model</strong>: A hierarchical model is a database model that organizes data in a tree-like structure, with each record having a single parent record.</li>
+				<li><strong>Network Model</strong>: A network model is a database model that allows each record to have multiple parent and child records, forming a network of relationships.</li>
+				<li><strong>Relational Model</strong>: A relational model is a database model that organizes data into tables with well-defined relationships between them.</li>
+			</ul>
+			<h2>Relational Model</h2>
+			<p>A relational model is a database model that organizes data into tables with well-defined relationships between them.</p>
+			<h2>Types of Relationships</h2>
+			<ul>
+				<li><strong>One-to-One (1:1)</strong>: A one-to-one relationship is a relationship between two tables where each record in one table is related to only one record in the other table.</li>
+				<li><strong>One-to-Many (1:N)</strong>: A one-to-many relationship is a relationship between two tables where each record in one table is related to multiple records in the other table.</li>
+				<li><strong>Many-to-Many (M:N)</strong>: A many-to-many relationship is a relationship between two tables where each record in one table is related to multiple records in the other table, and vice versa.</li>
+			</ul>
+			<h2>Example of Relational Model</h2>
+			<p>Consider a database that stores information about customers and orders. The relational model would organize this data into two tables: Customers and Orders.</p>
+			<table>
+				<tr>
+					<th>Customers</th>
+					<th>Orders</th>
+				</tr>
+				<tr>
+					<td>Customer ID</td>
+					<td>Order ID</td>
+				</tr>
+				<tr>
+					<td>Customer Name</td>
+					<td>Order Date</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>Total Amount</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
